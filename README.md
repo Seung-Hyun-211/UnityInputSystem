@@ -114,45 +114,6 @@ PlayerInputReader.Instance.OnConfirmInput += Confirm;
 경로: `Assets/Resources/Input/PlayerInputActions.inputactions`  
 로드 키: `Input/PlayerInputActions`
 
-### Control Schemes
-
-| Scheme | 디바이스 |
-|--------|----------|
-| Keyboard&Mouse | Keyboard, Mouse |
-| Gamepad | Gamepad |
-| Touch | Touchscreen |
-| Joystick | Joystick |
-| XR | XRController |
-
-### Player Action Map
-
-코드에서 사용 중인 액션:
-
-| Action | Type | 주요 바인딩 (KM) | 주요 바인딩 (Gamepad) | 사용처 |
-|--------|------|------------------|------------------------|--------|
-| Move | Value (Vector2) | WASD / 방향키 (Dpad composite) | Left Stick | `IInputMove.Direction` |
-| Look | Value (Vector2) | Pointer delta | Right Stick | `IInputCamera.CameraInput` |
-| Sprint | Button | Left Shift | Left Stick Press | `IInputMove.Sprint` |
-| Wheel | Value (Axis) | Mouse scroll Y | — | `IInputWheel.Wheel` |
-| Attack | Button | Mouse LMB / Enter | Button West | `OnConfirmInput` |
-| Build | Button | B | — | `OnBuildInput` |
-
-에셋에만 있고 코드 미연동:
-
-| Action | 주요 바인딩 (KM) | Interaction |
-|--------|------------------|-------------|
-| Jump | Space | — |
-| Interact | E | Hold |
-| Crouch | C | — |
-| Previous | 1 | — |
-| Next | 2 | — |
-
-### UI Action Map
-
-`Navigate`, `Submit`, `Cancel`, `Point`, `Click`, `ScrollWheel` 등 표준 UI 액션이 정의되어 있으나, 현재 스크립트에서는 사용하지 않습니다.
-
----
-
 ## 데이터 흐름 요약
 
 | 입력 종류 | 전달 방식 | 예시 |
