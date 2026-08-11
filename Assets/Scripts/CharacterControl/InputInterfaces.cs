@@ -14,3 +14,9 @@ public interface IInputWheel
 {
     float Wheel { get; }
 }
+
+
+public interface IInputAlt
+{
+    bool Alt { get; }
+}
